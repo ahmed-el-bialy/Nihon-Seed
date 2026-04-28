@@ -67,12 +67,12 @@
 
 | 🏠 Home | 🔢 Numbers | 👨‍👩‍👧‍👦 Family |
 |:-------:|:----------:|:--------------:|
-| <img src="screenshots/home.png" width="200"> | <img src="screenshots/numbers.png" width="200"> | <img src="screenshots/family.png" width="200"> |
+| <img src="screenshots/MainView.png" width="200"> | <img src="screenshots/NumbersView.png" width="200"> | <img src="screenshots/FamilyView.png" width="200"> |
 | Category selection | Counting 1-10 | Family vocabulary |
 
 | 🎨 Colors | 💬 Phrases |
 |:---------:|:----------:|
-| <img src="screenshots/colors.png" width="200"> | <img src="screenshots/phrases.png" width="200"> |
+| <img src="screenshots/ColorsView.png" width="200"> | <img src="screenshots/PhrasesView.png" width="200"> |
 | Color learning | Audio phrases |
 
 </div>
