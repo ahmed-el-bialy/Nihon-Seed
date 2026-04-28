@@ -72,7 +72,7 @@
 
 | 🎨 Colors | 💬 Phrases |
 |:---------:|:----------:|
-| <img src="screenshots/ColorsView.png" width="200"> | <img src="screenshots/PhrasesView.png" width="200"> |
+| <img src="screenshots/ColorsView.png" width="200"> | <img src="screenshots/phrasesView.png" width="200"> |
 | Color learning | Audio phrases |
 
 </div>
