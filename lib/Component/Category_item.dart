@@ -24,7 +24,7 @@ class CategoryCard extends StatelessWidget {
         },
         child: Card(
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadiusGeometry.circular(25),
+            borderRadius: BorderRadius.circular(25),
           ),
           elevation: 10,
           color: Color(model.color).withValues(alpha: .9),

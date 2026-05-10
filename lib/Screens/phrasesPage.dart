@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../Component/Button_Info.dart';
 import '../Models/Data_Models.dart';
@@ -58,7 +59,7 @@ class PhrasesPage extends StatelessWidget {
         foregroundColor: Colors.black,
         title: Text(
           "Phrases",
-          style: TextStyle(color: Colors.black, fontSize: 30),
+          style: TextStyle(color: Colors.black, fontSize: 30.sp),
         ),
         centerTitle: true,
         backgroundColor: Colors.grey[300],
@@ -68,7 +69,7 @@ class PhrasesPage extends StatelessWidget {
         itemCount: phrases.length,
         itemBuilder: (context, index) {
           return Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding:  EdgeInsets.all(8.0.r),
             child: ButtonInfo(model: phrases[index], color: color),
           );
         },

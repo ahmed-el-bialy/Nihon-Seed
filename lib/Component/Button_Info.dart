@@ -14,7 +14,7 @@ class ButtonInfo extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: Color(color),
-        borderRadius: BorderRadiusGeometry.circular(15),
+        borderRadius: BorderRadius.circular(15),
       ),
       child: Padding(
         padding: EdgeInsets.symmetric(vertical: 6.0.h),
@@ -25,13 +25,16 @@ class ButtonInfo extends StatelessWidget {
             children: [
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 3.0.h, horizontal: 6.w),
-                child: Text(
-                  model.japaneseWord,
-                  style: TextStyle(
-                    color: Colors.yellow[100],
-                    fontSize: 23.sp,
-                    fontWeight: FontWeight.w500,
-                    fontFamily: "Poppins",
+                child: FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Text(
+                    model.japaneseWord,
+                    style: TextStyle(
+                      color: Colors.yellow[100],
+                      fontSize: 23.sp,
+                      fontWeight: FontWeight.w500,
+                      fontFamily: "Poppins",
+                    ),
                   ),
                 ),
               ),

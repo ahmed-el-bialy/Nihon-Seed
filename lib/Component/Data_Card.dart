@@ -17,7 +17,7 @@ class DataCard extends StatelessWidget {
       child: Card(
         color: Color(color),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadiusGeometry.circular(25),
+          borderRadius: BorderRadius.circular(25),
         ),
         elevation: 10,
         child: Column(
@@ -25,7 +25,7 @@ class DataCard extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Card(
-              color: Color(color).withValues(alpha: .8),
+              color: Color(color).withValues(alpha: .5),
               elevation: 2,
               child: Padding(
                 padding: EdgeInsets.all(8.0.w),
