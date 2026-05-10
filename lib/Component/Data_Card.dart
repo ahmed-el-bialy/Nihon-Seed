@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nihon_seed/Component/Button_Info.dart';
 
 import '../Models/Data_Models.dart';
@@ -12,7 +13,7 @@ class DataCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric( vertical: 8),
+      padding: EdgeInsets.symmetric(horizontal: 4.w),
       child: Card(
         color: Color(color),
         shape: RoundedRectangleBorder(
@@ -27,7 +28,7 @@ class DataCard extends StatelessWidget {
               color: Color(color).withValues(alpha: .8),
               elevation: 2,
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(8.0.w),
                 child: Image.asset(model.imagePath!),
               ),
             ),

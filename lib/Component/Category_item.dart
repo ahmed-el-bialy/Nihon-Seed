@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nihon_seed/Models/Category_Model.dart';
 
 class CategoryCard extends StatelessWidget {
@@ -9,7 +10,7 @@ class CategoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: EdgeInsets.all(8.0.r),
       child: GestureDetector(
         onTap: () {
           Navigator.push(
@@ -29,7 +30,7 @@ class CategoryCard extends StatelessWidget {
           color: Color(model.color).withValues(alpha: .9),
 
           child: Padding(
-            padding: const EdgeInsets.all(16),
+            padding: EdgeInsets.all(16.r),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               mainAxisSize: MainAxisSize.min,
@@ -40,18 +41,22 @@ class CategoryCard extends StatelessWidget {
                     fit: BoxFit.scaleDown,
                     child: Text(
                       model.name,
-                      style: TextStyle(fontSize: 30, color: Colors.white),
+                      style: TextStyle(
+                        fontSize: 28.sp,
+                        color: Colors.white,
+                        fontFamily: "Poppins",
+                      ),
                     ),
                   ),
                 ),
-                SizedBox(width: 20),
+                SizedBox(width: 20.w),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 10),
+                  padding: EdgeInsets.symmetric(horizontal: 10.w),
                   child: Card(
                     elevation: 10,
                     color: Color(model.color).withValues(alpha: .6),
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(8.r),
                       child: model.icon,
                     ),
                   ),

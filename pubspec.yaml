@@ -39,8 +39,11 @@ dependencies:
   flutter_native_splash: ^2.4.7
   # A package which simplifies the task of updating your Flutter app's launcher icon.
   flutter_launcher_icons: ^0.14.4
-  rename: ^3.1.0
   # Helps you to change or rename your flutter project BundleId and AppName for Ios, Android, macOS and Linux platforms.
+  rename: ^3.1.0
+  # A flutter plugin for adapting screen and font size.Guaranteed to look good on different models.
+  flutter_screenutil: ^5.9.3
+
 
 dev_dependencies:
   flutter_test:
@@ -84,11 +87,11 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
+  fonts:
+     - family: Poppins
+       fonts:
+         - asset: assets/fonts/poppins_regular.ttf
+
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:

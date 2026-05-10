@@ -4,8 +4,13 @@ import '../Models/Data_Models.dart';
 import 'Data_Card.dart';
 
 class ItemListBuilder extends StatelessWidget {
-  const ItemListBuilder({super.key, required this.modelList, required this.color, });
-final int color;
+  const ItemListBuilder({
+    super.key,
+    required this.modelList,
+    required this.color,
+  });
+
+  final int color;
   final List<DataModel> modelList;
 
   @override
@@ -16,15 +21,12 @@ final int color;
         itemCount: modelList.length,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          childAspectRatio: 3 / 4,
-          crossAxisSpacing:4,
-          mainAxisSpacing: 5
+          childAspectRatio: .66,
+          crossAxisSpacing: 6,
+          mainAxisSpacing: 6,
         ),
         itemBuilder: (context, index) {
-          return DataCard(
-            model: modelList[index], color: color,
-
-          );
+          return DataCard(model: modelList[index], color: color);
         },
       ),
     );

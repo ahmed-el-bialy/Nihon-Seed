@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nihon_seed/Models/Category_Model.dart';
 import 'package:nihon_seed/Screens/ColorsPage.dart';
 import 'package:nihon_seed/Screens/FamilyPage.dart';
@@ -15,30 +16,26 @@ class HomePage extends StatelessWidget {
     CategoryModel(
       name: "Numbers",
       color: kNumberViewsColor,
-      icon: const Icon(Icons.numbers, size: 38, color: Colors.white),
+      icon: Icon(Icons.numbers, size: 38.sp, color: Colors.white),
       page: NumbersPage(),
     ),
     CategoryModel(
-      name: "Family Members",
+      name: "Family",
       color: kFamilyViewsColor,
-      icon: const Icon(Icons.family_restroom, size: 38, color: Colors.white),
+      icon: Icon(Icons.family_restroom, size: 38.sp, color: Colors.white),
       page: FamilyPage(),
     ),
     CategoryModel(
       name: "Colors",
       color: kColorViewsColor,
-      icon: const Icon(
-        Icons.color_lens_outlined,
-        size: 38,
-        color: Colors.white,
-      ),
+      icon: Icon(Icons.color_lens_outlined, size: 38.sp, color: Colors.white),
       page: ColorsPage(),
     ),
     CategoryModel(
       name: "Phrases",
       color: kPhrasesViewsColor,
-      icon: const Icon(Icons.speaker_notes, size: 38, color: Colors.white),
-      page: PhrasesPage(color: kPhrasesViewsColor,),
+      icon: Icon(Icons.speaker_notes, size: 38.sp, color: Colors.white),
+      page: PhrasesPage(color: kPhrasesViewsColor),
     ),
   ];
 
@@ -49,13 +46,13 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.grey[200],
         title: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 10.0),
+          padding:  EdgeInsets.symmetric(vertical: 10.0.h),
           child: Text(
-            "NihonSeed 🎌",
+            "NihonSeed",
             style: TextStyle(
               color: Colors.black,
               fontWeight: FontWeight.bold,
-              fontSize: 30,
+              fontSize: 28.sp,
             ),
           ),
         ),
@@ -64,7 +61,6 @@ class HomePage extends StatelessWidget {
 
       body: Column(
         children: [
-          SizedBox(height: 20),
           HomePageBody(categoryList: categoryList),
         ],
       ),

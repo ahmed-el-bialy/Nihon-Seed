@@ -9,12 +9,12 @@ class PhrasesPage extends StatelessWidget {
   final int color;
   final List<DataModel> phrases = [
     DataModel(
-      japaneseWord: "Kōdoku suru koto o\n wasurenaide kudasai",
+      japaneseWord: "Kōdoku suru koto o wasurenaide kudasai",
       englishWord: "don't forget to subscribe",
       sound: 'sounds/phrases/dont_forget_to_subscribe.wav',
     ),
     DataModel(
-      japaneseWord: "Puroguramingu wa \n kantandesu",
+      japaneseWord: "Puroguramingu wa kantandesu",
       englishWord: "programming is easy",
       sound: 'sounds/phrases/programming_is_easy.wav',
     ),
@@ -24,17 +24,17 @@ class PhrasesPage extends StatelessWidget {
       sound: 'sounds/phrases/where_are_you_going.wav',
     ),
     DataModel(
-      japaneseWord: "Namae wa\n nandesu ka",
+      japaneseWord: "Namae wa nandesu ka",
       englishWord: "what is your name?",
       sound: 'sounds/phrases/what_is_your_name.wav',
     ),
     DataModel(
-      japaneseWord: "Watashi wa anime\n ga daisukidesu",
+      japaneseWord: "Watashi wa anime ga daisukidesu",
       englishWord: "i love anime",
       sound: 'sounds/phrases/i_love_anime.wav',
     ),
     DataModel(
-      japaneseWord: "Go kibun wa\n ikagadesu ka",
+      japaneseWord: "Go kibun wa ikagadesu ka",
       englishWord: "how are you feeling?",
       sound: 'sounds/phrases/how_are_you_feeling.wav',
     ),

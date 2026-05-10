@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nihon_seed/helper/constants.dart';
 
 import '../Component/Item_List_Builder.dart';
@@ -81,7 +82,7 @@ class NumbersPage extends StatelessWidget {
           "Numbers",
           style: TextStyle(
             color: Colors.black,
-            fontSize: 30,
+            fontSize: 30.sp,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -90,7 +91,7 @@ class NumbersPage extends StatelessWidget {
       ),
 
       body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 8.0),
+        padding:  EdgeInsets.symmetric(vertical: 8.h),
         child: ItemListBuilder(modelList: numbersList, color: kNumberViewsColor,),
       ),
     );
