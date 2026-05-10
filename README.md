@@ -21,7 +21,7 @@
 
 ### 🎬 Watch the App in Action
 
-**[🔗 Watch on YouTube Shorts](https://youtube.com/shorts/tvvhXTkLd24?si=IYeuk77jfmlK8VhZ)**
+**[🔗 Watch on YouTube Shorts](https://youtube.com/shorts/OG-S_8oSN00?si=1K0SkiW8voSb4YR-)**
 
 *A complete walkthrough of NihonSeed demonstrating all learning categories, audio features, splash screen, and responsive design*
 
