@@ -41,12 +41,15 @@ class ButtonInfo extends StatelessWidget {
 
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 7.w),
-                child: Text(
-                  model.englishWord,
-                  style: TextStyle(
-                    color: Colors.white.withValues(alpha: .7),
-                    fontSize: 18.sp,
-                    fontFamily: "Poppins",
+                child: FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Text(
+                    model.englishWord,
+                    style: TextStyle(
+                      color: Colors.white.withValues(alpha: .7),
+                      fontSize: 18.sp,
+                      fontFamily: "Poppins",
+                    ),
                   ),
                 ),
               ),
