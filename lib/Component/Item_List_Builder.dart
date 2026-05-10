@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../Models/Data_Models.dart';
 import 'Data_Card.dart';
@@ -22,8 +23,8 @@ class ItemListBuilder extends StatelessWidget {
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           childAspectRatio: .66,
-          crossAxisSpacing: 6,
-          mainAxisSpacing: 6,
+          mainAxisSpacing: 15.h,
+          crossAxisSpacing: 15.w,
         ),
         itemBuilder: (context, index) {
           return DataCard(model: modelList[index], color: color);

@@ -14,17 +14,17 @@ class ButtonInfo extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: Color(color),
-        borderRadius: BorderRadius.circular(15),
+        borderRadius: BorderRadius.circular(15.r),
       ),
       child: Padding(
         padding: EdgeInsets.symmetric(vertical: 6.0.h),
         child: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Padding(
-                padding: EdgeInsets.symmetric(vertical: 3.0.h, horizontal: 6.w),
+                padding: EdgeInsets.symmetric(horizontal: 6.w),
                 child: FittedBox(
                   fit: BoxFit.scaleDown,
                   child: Text(
